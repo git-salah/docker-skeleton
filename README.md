@@ -24,9 +24,9 @@ docker-compose up -d
 ```
 
 To execute any command you have to write it inside its container 
-for example, if you want to run the migrations you will execute it inside the php container.
+for example, if you want to know the php version you will execute it inside the php container.
 ```
-docker-compose exec php php artisan migrate
+docker-compose exec php php --version
 ```
 
 # Ports
