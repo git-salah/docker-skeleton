@@ -1,4 +1,4 @@
-# zvendo-docker-skeleton
+# Docker-skeleton
 Template for making local syius environment with Docker over Postgresql and Nginx server.
 
 # Usage
