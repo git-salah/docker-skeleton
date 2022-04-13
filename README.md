@@ -1,4 +1,4 @@
-# Docker-skeleton
+# Docker skeleton
 Template for making local sylius environment with Docker over Postgresql and Nginx server.
 
 # Usage
