@@ -1,11 +1,11 @@
-# laravel-docker-skeleton
-Template for making local Laravel environment with Docker over Postgresql and Nginx server.
+# zvendo-docker-skeleton
+Template for making local syius environment with Docker over Postgresql and Nginx server.
 
 # Usage
 To get started, make sure you have Docker installed on your system, and then clone this repository.
 
-- Update `docker-compose.yml` by replacing `{{app-name}}` , `{{db-name}}` with your Laravel app and db names
-- Create your Laravel project inside the `src` directory.
+- Update `docker-compose.yml` by replacing `{{app-name}}` , `{{db-name}}` with your app and db names
+- Create your project inside the `src` directory.
 - Update the `.env` file.
 ```
 DB_CONNECTION=pgsql
