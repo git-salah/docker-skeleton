@@ -1,5 +1,5 @@
 # Docker-skeleton
-Template for making local syius environment with Docker over Postgresql and Nginx server.
+Template for making local sylius environment with Docker over Postgresql and Nginx server.
 
 # Usage
 To get started, make sure you have Docker installed on your system, and then clone this repository.
