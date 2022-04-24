@@ -8,7 +8,7 @@ To get started, make sure you have Docker installed on your system, and then clo
 - Create your project files inside the `src/app` directory.
 - Update the `parameters.yml` file.
 ```
-database_host: db  <<- (Docker service name)
+database_host: db  <<< (Docker service name)
 database_port: 3306
 database_name: maestro
 database_user: root
