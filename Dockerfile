@@ -19,7 +19,7 @@ RUN NPROC=$(grep -c ^processor /proc/cpuinfo 2>/dev/null || 1) && \
 RUN apk del --no-cache freetype-dev libpng-dev libjpeg-turbo-dev
 
 RUN cd /usr/local/etc/php/conf.d/ && \
-    echo 'memory_limit = -1' >> /usr/local/etc/php/conf.d/docker-php-ram-limit.ini \
+    echo 'memory_limit = -1' >> /usr/local/etc/php/conf.d/docker-php-ram-limit.ini
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer --version=1.10.1
 
@@ -33,7 +33,7 @@ RUN apk add --no-cache $PHPIZE_DEPS \
     && pecl install -o -f redis \
     && rm -rf /tmp/pear \
     && docker-php-ext-enable redis \
-    && echo "extension=redis.so" > /usr/local/etc/php/conf.d/redis.ini \
+    && echo "extension=redis.so" > /usr/local/etc/php/conf.d/redis.ini
 
 
 #RUN curl -sS https://get.symfony.com/cli/installer | bash
