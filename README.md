@@ -26,13 +26,13 @@ maestro_database_host: db
 ```
 
 
-If you have Redis installed locally you should stop it before building the image to prevent port conflicts
+If you have Redis installed locally you should stop it before building the image to prevent port conflicts.
 
 ```
 sudo service redis stop
 ```
 
-In your terminal, navigate to the directory you cloned this repo (where docker-compose.yml exists), and spin up the containers for the web server by running 
+In your terminal, navigate to the directory you cloned this repo (where docker-compose.yml exists), and spin up the containers for the web server by running.
 
 ```
 sudo docker-compose up -d --build
