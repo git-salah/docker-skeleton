@@ -6,6 +6,7 @@ To get started, make sure you have Docker installed on your system, and then clo
 
 - Update `docker-compose.yml` with your db Credentials
 - Create your project files inside the `src/app` directory.
+- Remove data.txt from mysql directory.
 - Update the `parameters.yml` file.
 ```
 database_host: db  <<< (Docker service name)
@@ -25,7 +26,13 @@ maestro_database_host: db
 ```
 
 
-In your terminal, navigate to the directory you cloned this repo, and spin up the containers for the web server by running 
+If you have Redis installed locally you should stop it before building the image to prevent port conflicts
+
+```
+sudo service redis stop
+```
+
+In your terminal, navigate to the directory you cloned this repo (where docker-compose.yml exists), and spin up the containers for the web server by running 
 
 ```
 sudo docker-compose up -d --build
