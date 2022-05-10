@@ -5,8 +5,8 @@ Template for making local sylius environment with Docker over Postgresql and Ngi
 To get started, make sure you have Docker installed on your system, and then clone this repository.
 
 - Update `docker-compose.yml` with your db Credentials
+- Create "mysql" directory.
 - Create your project files inside the `src/app` directory.
-- Remove data.txt from mysql directory.
 - Update the `parameters.yml` file.
 ```
 database_host: db  <<< (Docker service name)
